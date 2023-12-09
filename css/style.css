@@ -1,0 +1,147 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/17/17/07/stars-5662780_1280.png");
+}
+
+#bannerImage {
+    max-width: 1px;
+    max-height: 1px;
+    display: flex;
+    position:fixed;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 72px;
+    text-shadow: 2px 3px 2px black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(#153645, #173b4b, #183f4e);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+#homepageWrapper{
+display: flex;
+flex-direction: row;
+margin: auto;
+padding-top: 2vw;
+justify-content: space-evenly;
+}
+
+#potions {
+    display: flex;
+    flex-direction: column;
+}
+
+#potions img {
+    width: 200px;
+    max-height: 250px;
+    border-radius: 25px;
+    transition: 0.2s;
+    border: solid 2px transparent;
+}
+
+#potions img:hover {
+    scale: 1.05;
+    border: solid 2px white;
+}
+
+#potionsResults {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid 5px #088F8F;
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+#potionsResults img{
+    display: flex;
+    margin: auto;
+    width: 100px;
+    height: 120px;
+}
+
+#potionsResults p{
+    color: black;
+}
+
+#potionsDetails {
+    display: none;
+    background-color: white;
+    border: solid 5px #088F8F;
+    margin: auto;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: -150px;
+    z-index: 100;
+}
+
+#potionsDetails p {
+    color: black;
+}
+
+#potionsCard {
+    display: none;
+}
+
+#spells {
+    display: flex;
+    flex-direction: column;
+}
+
+#spells img {
+    width: 200px;
+    max-height: 250px;
+    border-radius: 25px;
+    transition: 0.2s;
+    border: solid 2px transparent;
+}
+
+#spells img:hover {
+    border: solid 2px white;
+    scale: 1.05;
+}
+
+#spellsResults {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid 5px #088F8F;
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+#spellsResults img{
+    display: flex;
+    margin: auto;
+    max-width: 200px;
+    max-height: 220px;
+}
+
+#spellsResults p{
+    color: black;
+}
+
