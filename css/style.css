@@ -1,21 +1,27 @@
 body {
     background-image: url("https://cdn.pixabay.com/photo/2020/10/17/17/07/stars-5662780_1280.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #2c7485;
+
 }
 
-#bannerImage {
-    max-width: 1px;
-    max-height: 1px;
+#castle {
     display: flex;
-    position:fixed;
 }
 
 h1 {
+    display: flex;
+    border-radius: 15px;
+    width: fit-content;
+    margin: auto;
+    padding-top: 50px;
     text-align: center;
     color: white;
-    font-size: 72px;
+    font-size: 68px;
     text-shadow: 2px 3px 2px black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(#153645, #173b4b, #183f4e);
+    background: linear-gradient(#143443,#143443,#163948,#163948);
 }
 
 h2 {
@@ -24,79 +30,126 @@ h2 {
     text-shadow: 1px 1px 1px black;
 }
 
-p {
-    text-align: center;
-    color: white;
+h3 {
+    margin-top: 30px;
 }
 
+p {
+    display: flex;
+    color: black;
+    max-width: 200px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    line-height: 120%;
+}
+
+
+
 #homepageWrapper{
-display: flex;
-flex-direction: row;
-margin: auto;
-padding-top: 2vw;
-justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 2vw;
+    justify-content: space-evenly;
 }
 
 #potions {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
+
 #potions img {
-    width: 200px;
-    max-height: 250px;
+    width: 280px;
+    height: 350px;
     border-radius: 25px;
     transition: 0.2s;
     border: solid 2px transparent;
+    cursor: pointer;
 }
 
 #potions img:hover {
     scale: 1.05;
     border: solid 2px white;
+    cursor: pointer;
 }
 
 #potionsResults {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
     text-align: center;
-    background-color: white;
     padding: 10px;
     border-radius: 25px;
-    border: solid 5px #088F8F;
-    width: 70vw;
+    width: 90%;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 #potionsResults img{
     display: flex;
+    border-radius: 15px;
     margin: auto;
     width: 100px;
     height: 120px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-#potionsResults p{
-    color: black;
+#potionsResults h3 {
+    padding: 30px 35px 0px 35px;
 }
+
+
+#potionsWrapper {
+    margin-top: 10px;
+    width: 280px;
+    height: 400px;
+    border-radius: 25px;
+    background-color: white;
+    border: solid 2px #183f4e;
+    vertical-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/04/20/26/frame-5130657_1280.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+#potionsWrapper:hover{
+    scale: 1.02;
+}
+
 
 #potionsDetails {
     display: none;
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/04/20/26/frame-5130657_1280.png");
+    background-size: contain;
     background-color: white;
-    border: solid 5px #088F8F;
+    width: 280px;
+    height: 400px;
     margin: auto;
-    width: fit-content;
     justify-content: center;
     text-align: center;
-    padding: 10px;
     border-radius: 25px;
-    margin-top: -150px;
-    z-index: 100;
+    margin-top: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    
 }
 
-#potionsDetails p {
-    color: black;
+
+#potionsDetails img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
 }
+
 
 #potionsCard {
     display: none;
@@ -105,43 +158,94 @@ justify-content: space-evenly;
 #spells {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 #spells img {
-    width: 200px;
-    max-height: 250px;
+    width: 280px;
+    height: 350px;
     border-radius: 25px;
     transition: 0.2s;
     border: solid 2px transparent;
+    cursor: pointer;
 }
 
 #spells img:hover {
     border: solid 2px white;
     scale: 1.05;
+    cursor: pointer;
 }
 
 #spellsResults {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
     text-align: center;
-    background-color: white;
     padding: 10px;
     border-radius: 25px;
-    border: solid 5px #088F8F;
-    width: 70vw;
+    width: 90%;
     justify-content: space-evenly;
+    cursor: pointer;
 }
+
 
 #spellsResults img{
     display: flex;
+    border-radius: 15px;
     margin: auto;
-    max-width: 200px;
-    max-height: 220px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-#spellsResults p{
-    color: black;
+
+#spellsWrapper {
+    margin-top: 10px;
+    width: 280px;
+    height: 400px;
+    border-radius: 25px;
+    background-color: white;
+    border: solid 2px #183f4e;
+    vertical-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/04/20/26/frame-5130657_1280.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
 }
 
+#spellsWrapper:hover {
+    scale: 1.02;
+    transition: ease 0.2s;
+
+}
+
+#spellsDetails {
+    display: none;
+    flex-wrap: wrap;
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/04/20/26/frame-5130657_1280.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 280px;
+    height: 400px;
+    min-height: fit-content;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding: 15px;
+    
+}
+
+#spellsDetails img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+#spellsCard {
+    display: none;
+}
